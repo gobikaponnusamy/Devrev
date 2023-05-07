@@ -62,7 +62,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 1;
-   
+    
   }
 
   nav{
@@ -116,6 +116,7 @@
 
     
 
+
   .filterright{
     background-color: transparent;
     display: flex;
@@ -123,7 +124,7 @@
     align-self: center;
     height: 7vh;
     width: 35vw;
-    margin-left: 76vw;
+    margin-left: 88vw;
     border-radius: var(--border-radius);
     align-items: center;
     justify-content: start;
@@ -249,7 +250,7 @@
 
   .postbox{
     margin-left: 0.9vw;
-    background-color: orange;
+    background-color: rgb(231, 227, 220);
     width: 4vw;
     height: 6vh;
     border-radius: var(--border-radius);
@@ -415,8 +416,6 @@
   
   /* grid-template-columns: auto auto auto auto; */
 }
-
-
 
 
 .bookelement{
@@ -667,10 +666,6 @@ height: auto;
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-
-
-
-/* scroll button for top and bottom */
 .scroll-btn {
   cursor: pointer;
   background-color: #f8f9fab1;;
@@ -720,12 +715,11 @@ height: auto;
   }
   .navright{
     font-size: 50px;
-    margin-left:  65vw;
+    margin-left:  60vw;
     width: 25vw;
   }
 
   
-
   .topelements{
     display: flex;
     justify-content: space-between;
@@ -735,7 +729,6 @@ height: auto;
   }
 
   
-
   .filterright{
   
     margin-left: 35vw;
@@ -814,7 +807,7 @@ height: auto;
       border-radius: 50px;
   }
 
- 
+  
 
   .scroll-btn {
     left: 96vw;
@@ -906,7 +899,7 @@ height: auto;
       margin: 25px;
   }
 
- 
+  
 
 }
 
@@ -1006,8 +999,7 @@ height: auto;
       margin: 25px;
   }
 
- 
-    .scroll-btn {
+   .scroll-btn {
       bottom: 20px;
       right: 20px;
     }
