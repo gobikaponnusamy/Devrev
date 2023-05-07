@@ -160,8 +160,7 @@ async function createCard(book){
         }); 
     }
     updateBookDetails();
-    // imageLink = `data:image/jpeg;base64,${imageData.coverImage.toString('base64')}`;
-    // previewLink = 
+     
   }
   else{
       previewLink = book.previewLink;
@@ -310,81 +309,7 @@ function enableScroll() {
     window.onscroll = null;
 }
 
-//to post new book data
-document.getElementById('postbox').addEventListener('click', () => {
-  whileadding = true;
-  disableScroll()
-  endOfBooks=true;
-  let dialogBox = document.createElement('div');
-  dialogBox.setAttribute('id', 'dialog-box');
-  dialogBox.innerHTML = `
-    <div id="dialog-content">
-      <h2>Add Book</h2>
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title">
-      <label for="author">Author:</label>
-      <input type="text" id="author" name="author">
-      <label for="date">Published Date: </label>
-      <input type="date" pattern="\d{4}/\d{2}/\d{2}" id="date" name="date" max="${new Date().toISOString().slice(0,10)}">
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject">
-      <label for="description">Description:</label>
-      <textarea id="description" name="description"></textarea>
-      <button id="add-book">Add Book</button>
-      <button id="cancel">Cancel</button>
-    </div>
-  `;
-  document.body.appendChild(dialogBox);
 
-  let addBookBtn = document.getElementById('add-book');
-  addBookBtn.addEventListener('click',async () => {
-    if(!posting){
-      posting = true;
-    let title = document.getElementById('title').value.trim();
-    let author = document.getElementById('author').value.trim();
-    let date = document.getElementById('date').value.trim();
-    let subject = document.getElementById('subject').value.trim();
-    let description = document.getElementById('description').value.trim();
-    if((title+author+date+subject+description).includes('<script>') || title=='' || author=='' || date == '' || subject == '' || description == ''){alert('Enter valid book details!');return}
-      else{let obj = {
-        title : title,
-        author : author, 
-        publishedDate : date,
-        subject : subject,
-        desc : description 
-      }
-      await postOneBook(obj).then(()=>{
-        alert('Posted successully!');
-        endOfBooks=false;
-      }).catch((err)=>alert('Something went wrong!' + err.message));
-      dialogBox.remove();
-      }
-      posting=false;
-      enableScroll();
-      endOfBooks=false;
-      whileadding = false;
-    }
-  });
-
-  let cancelBtn = document.getElementById('cancel');
-  cancelBtn.addEventListener('click', () => {
-    dialogBox.remove();
-    enableScroll();
-    endOfBooks=false;
-    whileadding = false;
-  });
-
-  
-});
-
-document.body.addEventListener('keydown', (e) => {
-  if(whileadding && e.key === 'Escape'){
-    document.getElementById('dialog-box').remove();
-    enableScroll();
-    endOfBooks=false;
-    whileadding = false;
-  }
-})
 
 //scroll to top and bottom of the screen button 
 let gototop = document.getElementById('go-to-top');

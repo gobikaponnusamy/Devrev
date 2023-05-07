@@ -124,7 +124,7 @@
     align-self: center;
     height: 7vh;
     width: 35vw;
-    margin-left: 76vw;
+    margin-left: 88vw;
     border-radius: var(--border-radius);
     align-items: center;
     justify-content: start;
@@ -250,7 +250,7 @@
 
   .postbox{
     margin-left: 0.9vw;
-    background-color: orange;
+    background-color: rgb(231, 227, 220);
     width: 4vw;
     height: 6vh;
     border-radius: var(--border-radius);
@@ -666,81 +666,6 @@ height: auto;
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-
-
-#dialog-box {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  z-index: 1;
-}
-
-#dialog-content {
-  position: absolute;
-  top: 10vh;
-  left: 35vw;
-  transform: translate(-50%, -50%);
-  background-color: var(--neutral-color);
-  padding: 20px;
-  width: 30vw;
-  height: 75vh;
-  border-radius: var(--border-radius);
-  
-}
-
-#dialog-content h2 {
-  margin-top: 0;
-}
-
-#dialog-content label {
-  display: block;
-  margin-bottom: 5px;
-  margin-left: 0.5vw;
-}
-
-#dialog-content input,
-#dialog-content textarea {
-  border: none;
-  box-shadow: var(--box-shadow-button);
-  margin-left: 2vw;
-  width: 80%;
-  padding: 5px;
-  height: 5vh;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  text-indent: 10px;
-}
-
-#dialog-content textarea {
-  padding: 8px;
-  height: 7vh;
-}
-
-#dialog-content input:focus,
-#dialog-content textarea:focus {
-  outline: none;
-  box-shadow: var(--box-shadow-book);
-}
-
-#dialog-content button {
-  background-color: #d4d4d4;
-  margin-left: 6vw;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: var(--border-radius);
-  border: none;
-}
-
-#dialog-content button:hover {
-  cursor: pointer;
-  background-color: #888;
-}
-
-/* scroll button for top and bottom */
 .scroll-btn {
   cursor: pointer;
   background-color: #f8f9fab1;;
@@ -790,7 +715,7 @@ height: auto;
   }
   .navright{
     font-size: 50px;
-    margin-left:  65vw;
+    margin-left:  60vw;
     width: 25vw;
   }
 
@@ -882,17 +807,7 @@ height: auto;
       border-radius: 50px;
   }
 
-  #dialog-content {
-    position: absolute;
-    top: 10vh;
-    left: 30vw;
-    transform: translate(-50%, -50%);
-    background-color: var(--neutral-color);
-    padding: 20px;
-    width: 30vw;
-    height: 55vh;
-    border-radius: 20px;
-  }
+  
 
   .scroll-btn {
     left: 96vw;
@@ -984,17 +899,7 @@ height: auto;
       margin: 25px;
   }
 
-  #dialog-content {
-    position: absolute;
-    top: 10vh;
-    left: 15vw;
-    transform: translate(-50%, -50%);
-    background-color: var(--neutral-color);
-    padding: 20px;
-    width: 65vw;
-    height: 75vh;
-    border-radius: var(--border-radius);
-  }
+  
 
 }
 
@@ -1094,19 +999,7 @@ height: auto;
       margin: 25px;
   }
 
-  #dialog-content {
-    position: absolute;
-    top: 10vh;
-    left: 15vw;
-    transform: translate(-50%, -50%);
-    background-color: var(--neutral-color);
-    padding: 20px;
-    width: 65vw;
-    height: 75vh;
-    border-radius: var(--border-radius);
-  }
-
-    .scroll-btn {
+   .scroll-btn {
       bottom: 20px;
       right: 20px;
     }
