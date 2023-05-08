@@ -8,13 +8,13 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="./screenshot/1.png" alt="project-screenshot" width="400" height="400/">
+<img src="./screenshot/1.png" alt="project-screenshot" width="500" height="300/">
 
-<img src="./screenshot/2.png" alt="project-screenshot" width="400" height="400/">
+<img src="./screenshot/2.png" alt="project-screenshot" width="500" height="300/">
 
-<img src="./screenshot/3.png" alt="project-screenshot" width="400" height="400/">
+<img src="./screenshot/3.png" alt="project-screenshot" width="500" height="300/">
 
-<img src="./screenshot/4.png" alt="project-screenshot" width="400" height="400/">
+<img src="./screenshot/4.png" alt="project-screenshot" width="500" height="300/">
 
   
   
